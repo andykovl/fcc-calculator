@@ -1,13 +1,120 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(18deg, #f0e5d5 0%, #cecece 72%);
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: unset;
+    padding-top: 0;
+  }
+}
+button {
+  border: none;
+  background-color: transparent;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: rgb(32, 32, 32);
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  aspect-ratio: 1/1;
+}
+
+.operations {
+  color: rgb(155, 24, 24);
+  font-weight: 500;
+}
+
+.equals {
+  color: rgb(244, 244, 244);
+  background-color: rgb(155, 24, 24);
+  font-weight: 500;
+}
+.equals:hover {
+  background-color: #921717;
+}
+
+.themechange {
+  margin: 0;
+  background-color: rgba(32, 32, 32, 0.1);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 340px;
+  height: 540px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(244, 244, 244);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    padding: 20px;
+  }
+}
+.buttonbox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .buttonbox {
+    height: auto;
+  }
+}
+.screen {
+  height: 70px;
+  width: 100%;
+  padding: 0 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(32, 32, 32);
+  font-weight: 400;
+  box-sizing: border-box;
+  font-size: 2.8rem;
+}
+
+.screencalc {
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: rgb(32, 32, 32);
+  font-weight: 400;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=index.css.map */

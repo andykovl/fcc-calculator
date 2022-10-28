@@ -1,0 +1,16 @@
+@use '../abstracts/variables';
+
+.screen {
+    height: 70px;
+    width: 100%;
+    padding: 0 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: variables.$txt-black;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-size: 2.8rem;
+    
+  }

@@ -1,0 +1,33 @@
+@use '../abstracts/variables';
+
+button {
+    border: none;
+    background-color: transparent;
+    line-height: 2;
+    font-size: 1.5rem;
+    color: variables.$txt-black;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    aspect-ratio: 1 / 1;
+}
+
+.operations {
+    color: variables.$txt-color;
+    font-weight: 500;
+}
+
+.equals {
+    color: variables.$calc-btn-text;
+    background-color: variables.$txt-color;
+    font-weight: 500;
+
+    &:hover {
+        background-color: darken(variables.$txt-color, 2%);
+    }
+}
+
+.themechange {
+    margin: 0;
+    background-color: rgba(32, 32, 32, 0.1);
+}

@@ -1,0 +1,29 @@
+@use '../abstracts/variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(18deg, variables.$grad-color-start 0%, variables.$grad-color-end 72%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      display: unset;
+        
+        padding-top: 0;
+    }
+}
